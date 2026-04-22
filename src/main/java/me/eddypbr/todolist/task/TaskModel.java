@@ -32,7 +32,7 @@ public class TaskModel {
 
   public void setPriority(TaskPriorityEnum priority) throws Exception {
     if (priority == null) {
-      throw new Exception("Invalid priority value");
+      throw new Exception("Invalid priority value: Priority must not be null");
     }
     
     this.priority = priority;
