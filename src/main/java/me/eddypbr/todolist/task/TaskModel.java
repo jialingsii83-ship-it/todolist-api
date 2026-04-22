@@ -44,8 +44,8 @@ public class TaskModel {
   private LocalDateTime CreatedAt;
 
   public void setTitle(String title) throws Exception {
-    if (title.length() > 50) {
-      throw new Exception("Title must be have less then 50 characters");
+    if (title.length() > 60) {
+      throw new Exception("Title must be have less then 60 characters");
     }
 
     this.title = title;
