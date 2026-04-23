@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
       - unit-testing
       - integration-testing
   pull_request:
     branches:
-      - main
+      - master
       - unit-testing
       - integration-testing
 
