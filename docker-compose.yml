@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  todolist-api:
+    build: .
+    container_name: todolist-api
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

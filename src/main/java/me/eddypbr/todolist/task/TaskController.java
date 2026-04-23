@@ -85,7 +85,7 @@ public class TaskController {
     var task = this.taskRepository.findById(id).orElse(null);
 
     if (task == null) {
-      return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Task not found");
+      return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Task not found. Please provide a valid task id.");
     }
 
     UserModel user = (UserModel) request.getAttribute("user");
